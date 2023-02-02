@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex9 Condicoes</title>
+    <style>
+        body{
+            background-color: rgb(160, 117, 86);
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vehicle Speed Test (max allowed - 100mph)</h1>
+    <input type="number" name="speed" id="speed">
+    <input type="button" value="verify" onclick="clicked()">
+    <div id="results">
+        
+    </div>
+
+    <script>
+        function clicked(){
+        var speedinput = document.getElementById("speed").value;
+        var resulttxt = document.getElementById("results");
+        if(speedinput >= 100){
+            resulttxt.innerHTML = "Over the limit";
+        }else{
+            resulttxt.innerHTML = "Under the limit";
+        }
+    }
+    </script>
+</body>
+</html>

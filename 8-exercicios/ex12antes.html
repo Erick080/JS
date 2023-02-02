@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex12</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        div#block{
+            background-color: rgb(125, 218, 198);
+            width: fit-content;
+            height: fit-content;
+            margin: auto;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Age Verifier</h1>
+
+    <div id="block">
+    Type your birth year:
+    <input type="number" name="birthYear" id="birthYear">
+    <p>Gender:
+    <input type="checkbox" name="Male" id="Male" onclick="clickingM()"> Male
+    <input type="checkbox" name="Female" id="Female" onclick="clickingF()"> Female
+    <p> <input type="button" value="Verify" onclick="clickingAge()">
+    </div>
+
+    <script>
+        var box = document.getElementById("block");
+        var female = false;
+        var male = false;
+        
+        function clickingM(){
+            male = true;
+        }
+        
+        function clickingF(){
+        female = true;
+        }
+        
+        function clickingAge(){
+        var gender = null;
+        var yearB = document.getElementById("birthYear").value;
+        var yearN = new Date().getFullYear();
+        var age = yearN - yearB;
+        
+        
+         if(female == true){gender = "woman"}
+        else if (male == true){gender = "man"}
+        else{gender = "undefined"}
+
+        box.insertAdjacentText("beforeend",`Your age is ${age} and 
+        you are a ${gender}`);
+        }
+    </script>
+</body>
+</html>

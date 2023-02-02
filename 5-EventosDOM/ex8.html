@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex8</title>
+    <style>
+      body {
+        background-color: rgb(21, 39, 48);
+      }
+      div#header {
+        font-family: cursive;
+        background-color: rgb(39, 82, 75);
+        text-align: start;
+        width: fit-content;
+      }
+      div#results{
+        background-color: antiquewhite;
+        width: fit-content;
+      }
+      input{
+        font-size: medium;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Sum of Numbers</h1>
+      <p>Calculate the sum of two numbers</p>
+    </div>
+
+    <input type="number" name="num1" id="num1" />
+    <input type="number" name="num2" id="num2" />
+    <input type="button" value="calculate" onclick="somar()" />
+    <div id="results"></div>
+
+    <script>
+      function somar() {
+        var n1 = Number(document.getElementById("num1").value);
+        var n2 = Number(document.getElementById("num2").value);
+        let calc = n1 + n2;
+        document.getElementById("results").innerHTML = `The result is <strong>${calc}</strong>`;
+      }
+    </script>
+  </body>
+</html>

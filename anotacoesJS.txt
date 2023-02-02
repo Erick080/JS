@@ -1,0 +1,126 @@
+
+
+digitar html5 para inicializar a config padrao do html
+
+head - configuracoes do arquivo (CSS)
+body - texto e conteudo (HTML E JS)
+
+ definir um titulo - <h1> Titulo  </h1>
+
+ mudar as cores da fonte e do fundo - <style> color: cor; background-color:cor  </style>
+
+ iniciar paragrafo - <p> Texto </p>
+
+ iniciar um script (antes de fechar o body) - <script> xxxxxx </script>
+
+ alerta - window.alert("texto");
+ pop up com escolha - window.confirm("texto");
+ prompt - window.prompt("texto");
+
+ declarar variavel - var nome = "Erick" (PS: a variavel pode mudar de tipo)
+
+ 
+ Qual a diferença entre: var, let e const?
+
+
+
+  var:
+
+Cria uma variável de ESCOPO GLOBAL. Ou seja, esta variável funciona em QUALQUER parte do programa, sendo reconhecida GLOBALMENTE.
+
+Uma variável  var  PODE ser REDECLARADA.
+
+Uma variável  var  PODE ter seu VALOR REATRIBUÍDO.
+
+
+
+  let:
+
+Cria uma variável de ESCOPO LOCAL. Ou seja, esta variável funciona APENAS dentro do BLOCO em que ela está declarada, sendo reconhecida LOCALMENTE.
+
+Uma variável  let  NÃO PODE ser REDECLARADA.
+
+Uma variável  let  PODE ter o seu VALOR REATRIBUÍDO.
+
+
+
+  const:
+
+Cria uma variável de escopo LOCAL. Ou seja, esta variável funciona APENAS dentro do BLOCO em que ela está declarada, sendo reconhecida LOCALMENTE.
+
+Uma variável  const  NÃO PODE ser REDECLARADA.
+
+Uma variável  const  NÃO PODE ter seu VALOR REATRIBUÍDO.
+
+
+ 
+typeof xxxx diz qual e o tipo de xxxx
+
+Símbolos de =, == e ===:
+
+=     significa: símbolo de ATRIBUIÇÃO.
+
+==   significa: símbolo de VALOR IGUAL.
+
+=== significa: símbolo de TIPO e VALOR IGUAL.
+
+
+Para converter string para int -- Number.parseInt(n)
+Para converter string para float -- Number.parseFloat(n)
+Ou number(n) para fazer o js detectar o tipo de numero
+
+Numero p/ string -- String(n) ou n.toString
+
+Para formatar string -- `Eu estou aprendendo ${nome}`  *usar crase
+
+s.length -- tamanho da string
+s.toUpperCase() -- muda string para maiuscula
+s.toLowerCase() -- muda string para minuscula
+
+document.write escreve algo na pagina aberta
+
+<strong>texto</strong> p/ ficar em negrito
+
+usar na string <br> para ir para nova linha ou <p> para fazer novo paragrafo
+
+formatando casas decimais -- n1.tofixed(2) //para 2 casas decimais
+p/ trocar ponto por virgula -- n1.tofixed(2).replace(".",",")
+p/ formatar em reais -- n1.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})
+
+
+operador ternario: teste ? true : false
+
+Selecionando objetos:
+1 - por marca : getElementsByTagName()[0] -- pega primeira referencia
+    OBS: para mostrar o texto de uma tag, usar variavel.innerText
+          e para ele ja vir formatado, inner.HTML
+
+2 - por ID: getElementsByID()   *necessario botar ID na tag
+3 - por Nome: getElementsByName()
+4 - por Classe: getElementsByClassName()
+5 - por Seletor: querySelector()
+    para div: document.querySelector("div#id")
+    para classe: document.querySelector("div.id")
+    
+Eventos DOM:
+mouseenter - ativa quando o cursor esta dentro do "botao"
+mouseout - ativa quando o cursor sai do "botao"
+mousemove - ativa quando o cursor se mover dentro do "botao"
+mousedown - ativa quando clickar e segurar o mouse
+mouseup - ativa quando soltar o mouse 
+click
+
+para iniciar uma funcao - function nome(){}
+
+no html da pra usar <input/>  para salvar alguma informacao inserida
+
+para escrever algo no console -- console.log
+
+para pegar horarios e datas do pc do usuario usar date() e getters
+
+
+rodape - footer
+
+
+para conectar html com arquivo de css, usar <link rel="stylesheet" href="nomearquivo.css">
+para conectar html com arquivo js, usar script src

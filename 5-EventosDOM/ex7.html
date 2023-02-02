@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exercicio7</title>
+    <style>
+      div#area {
+        font: normal 5pt Arial;
+        background: blue;
+        color: azure;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    Studying DOM events
+    <p>Interaction button bellow:</p>
+
+    <div
+      
+      id="area"
+      onclick="clicking()"
+      onmouseenter="entering()"
+      onmouseleave="leaving()"
+    >
+      Get over here
+    </div>
+
+    <script id="buttonScript"> 
+        var clicks = 0;
+        var button = document.getElementById("area");
+        //this is another way of declaring functions done at 27-29
+        //button.addEventListener("click",clicking);
+        //button.addEventListener("mouseenter",entering);
+        //button.addEventListener("mouseleave",leaving);
+      
+        function clicking() {
+        //interactive area turns green when clicked
+        clicks++;
+        document.getElementById("area").style.background = "green";
+        document.getElementById("area").innerHTML = `You clicked the button ${clicks} times`;
+      }
+
+      
+      function entering() {
+        document.getElementById("area").style.background = "blue"; //resets color if needed
+        document.getElementById("area").innerHTML = "click this";
+      }
+      
+      function leaving() {
+        document.getElementById("area").innerHTML = "get back :(";
+      }
+    </script>
+  </body>
+</html>
