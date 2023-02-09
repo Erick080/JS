@@ -108,7 +108,7 @@ mouseout - ativa quando o cursor sai do "botao"
 mousemove - ativa quando o cursor se mover dentro do "botao"
 mousedown - ativa quando clickar e segurar o mouse
 mouseup - ativa quando soltar o mouse 
-click
+onclick
 
 para iniciar uma funcao - function nome(){}
 
@@ -124,3 +124,5 @@ rodape - footer
 
 para conectar html com arquivo de css, usar <link rel="stylesheet" href="nomearquivo.css">
 para conectar html com arquivo js, usar script src
+
+usar <img> para inserir uma imagem
