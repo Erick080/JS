@@ -8,11 +8,14 @@
     <style> 
         body{
             color:rgb(123, 165, 202);
-            background-color: rgb(34, 33, 33);
+            background-color: rgb(0, 0, 0);
             font:normal 15pt Arial;
         }
         h1{
-            color:blueviolet
+            color:blueviolet;
+            background-color: rgb(46, 46, 15);
+            background-size: 5mm;
+            
         }
     </style>
 </head>
@@ -23,7 +26,10 @@
     <script>
         window.alert("Fatal error x000034 :("); 
         window.confirm("Press ok");
-        window.prompt("Type your name");
+        var nome = window.prompt("Type your name");
+        document.writeln("Hello " + nome);
+        
+        
     </script>    
 </body>
 </html>
